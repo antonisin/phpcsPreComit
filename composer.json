@@ -1,0 +1,21 @@
+{
+    "name": "maximantonisin/php-code-sniffer-pre-commit",
+    "description": "PHP Code Sniffer Git Pre-Commit intefration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maxim Antonisin",
+            "email": "maxim.antonisin@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "squizlabs/php_codesniffer": "4.0.x-dev"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Echo hello",
+            "pwd"
+        ]
+    }
+}
