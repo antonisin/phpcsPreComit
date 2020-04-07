@@ -35,6 +35,13 @@ then
 		echo "Fix the error before commit."
 		exit 1
 	fi
+	echo "Running Phpstan..."
+	./vendor/bin/phpstan analyse --level 0 --configuration=phpstan.neon $FILES
+	if [ $? != 0 ]
+	then
+		echo "Fix the error before commit."
+		exit 1
+	fi
 fi
 
 exit $?
